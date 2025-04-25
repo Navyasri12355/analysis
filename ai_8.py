@@ -5,7 +5,7 @@ import seaborn as sns
 import google.generativeai as genai
 
 # 🔐 Gemini API key setup (replace with your actual key)
-genai.configure(api_key="AIzaSyCYlSBX54r7y1bZ5AueLsu8R-NizNDDo1c")
+google_api_key = st.secrets["api_keys"]["google_api"]
 
 # 🔧 Streamlit page config
 st.set_page_config(page_title="AI-Powered Clothing Sales Analysis", layout="wide")
