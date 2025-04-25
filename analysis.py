@@ -8,8 +8,8 @@ import google.generativeai as genai
 genai.configure(api_key="api_key")
 
 # 🔧 Streamlit page config
-st.set_page_config(page_title="AI-Powered Home Bakery Sales Dashboard", layout="wide")
-st.title("🧠 AI-Powered Home Bakery Sales Dashboard")
+st.set_page_config(page_title="AI-Powered Home Bakery Sales Analysis", layout="wide")
+st.title("🧠 AI-Powered Home Bakery Sales Analysis")
 
 # 📁 File uploader
 uploaded_file = st.file_uploader("Upload your home bakery sales CSV file", type="csv")
