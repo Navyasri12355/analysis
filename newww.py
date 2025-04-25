@@ -8,8 +8,8 @@ import google.generativeai as genai
 google_api_key = st.secrets["api_keys"]["google_api"]
 
 # 🔧 Streamlit page config
-st.set_page_config(page_title="AI-Powered Personalized Gift Dashboard", layout="wide")
-st.title("🎁 AI-Powered Personalized Gift Dashboard")
+st.set_page_config(page_title="AI-Powered Personalized Gift Analysis", layout="wide")
+st.title("🎁 AI-Powered Personalized Gift Analysis")
 
 # 📁 File uploader
 uploaded_file = st.file_uploader("Upload your sales CSV file", type="csv")
