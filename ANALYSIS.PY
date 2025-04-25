@@ -5,7 +5,7 @@ import seaborn as sns
 import google.generativeai as genai
 
 # 🔐 Gemini API key setup (replace with your actual key)
-genai.configure(api_key="AIzaSyCYlSBX54r7y1bZ5AueLsu8R-NizNDDo1c")
+genai.configure(api_key="api_key")
 
 # 🔧 Streamlit page config
 st.set_page_config(page_title="AI-Powered Home Bakery Sales Dashboard", layout="wide")
