@@ -49,7 +49,6 @@ if uploaded_file:
         st.bar_chart(age_rev)
         weekday_rev = df.groupby(df['Date'].dt.day_name())['Revenue'].sum().sort_values()'''
 
-        # 🤖 AI Suggestions Section
         st.subheader("🧠 AI Suggestions for Growth")
 
         summary_text = f"""
@@ -78,7 +77,6 @@ if uploaded_file:
         {weekday_rev.to_string()}
         """
 
-        # 🔍 Generate AI Suggestions
         model = genai.GenerativeModel('gemini-2.0-flash-thinking-exp')
         with st.spinner("Getting AI-generated suggestions..."):
             response = model.generate_content(summary_text)
